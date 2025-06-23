@@ -117,24 +117,24 @@ Key configuration options in `.env`:
 This service provides the exact functionality described in your requirements, with real API integrations, proper caching, WebSocket support, and production-ready architecture.
 
 ## ENV FILE
-PORT=
+PORT=your port
 NODE_ENV=development
 
-# Redis Configuration
+**Redis Configuration**
 REDIS_HOST=localhost
 REDIS_PORT=6379
 REDIS_PASSWORD=
 
-# Cache Configuration
+**Cache Configuration**
 CACHE_TTL=30
 
-# Rate Limiting
+**Rate Limiting**
 RATE_LIMIT_WINDOW=60000
 RATE_LIMIT_MAX=100
 
-# Scheduler
+**Scheduler**
 FETCH_INTERVAL=*/30 * * * * *
 
-# Logging
+**Logging**
 LOG_LEVEL=info
 ```
