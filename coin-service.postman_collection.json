@@ -1,0 +1,723 @@
+{
+	"info": {
+		"_postman_id": "fec731da-375c-4a34-b000-0c1e14d6cad3",
+		"name": "coin-service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45392507",
+		"_collection_link": "https://pratyush-1565936.postman.co/workspace/Pratyush's-Workspace~de3d6dc6-8146-4669-8336-3420dcc847c9/collection/45392507-fec731da-375c-4a34-b000-0c1e14d6cad3?action=share&source=collection_link&creator=45392507"
+	},
+	"item": [
+		{
+			"name": "GET All Tokens",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/tokens",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"tokens"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "RateLimit-Policy",
+							"value": "100;w=60"
+						},
+						{
+							"key": "RateLimit-Limit",
+							"value": "100"
+						},
+						{
+							"key": "RateLimit-Remaining",
+							"value": "99"
+						},
+						{
+							"key": "RateLimit-Reset",
+							"value": "60"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3600"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"e10-2Wy95m27h0CY0RSliE+ldIdM0Vs\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Jun 2025 05:06:51 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"token_address\": \"719cLKqG9nhJCAYCjrBUGxsUSwJwPCcQjNkkq1Gypump\",\n            \"token_name\": \"Solana\",\n            \"token_ticker\": \"SOL\",\n            \"price_sol\": 1.138e-7,\n            \"market_cap_sol\": 132926186291.7399,\n            \"volume_sol\": 289642530755.7118,\n            \"liquidity_sol\": 499714091,\n            \"transaction_count\": 599,\n            \"price_1hr_change\": 6.96,\n            \"price_24hr_change\": -48.4,\n            \"protocol\": \"pumpswap\",\n            \"last_updated\": \"2025-06-23T05:06:44.210Z\",\n            \"source\": \"dexscreener\"\n        },\n        {\n            \"token_address\": \"fESbUKjuMY6jzDH9VP8cy4p3pu2q5W2rK2XghVfNseP\",\n            \"token_name\": \"CatFrogDogShark\",\n            \"token_ticker\": \"SOLANA\",\n            \"price_sol\": 4.889e-7,\n            \"market_cap_sol\": 127952546533.03334,\n            \"volume_sol\": 7118142769.4825115,\n            \"liquidity_sol\": 455576841,\n            \"transaction_count\": 47,\n            \"price_1hr_change\": 0,\n            \"price_24hr_change\": -12.3,\n            \"protocol\": \"raydium\",\n            \"last_updated\": \"2025-06-23T05:06:44.210Z\",\n            \"source\": \"dexscreener\"\n        },\n        {\n            \"token_address\": \"EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v\",\n            \"token_name\": \"USDC\",\n            \"token_ticker\": \"USDC\",\n            \"price_sol\": 1.000021,\n            \"market_cap_sol\": 0,\n            \"volume_sol\": 0,\n            \"liquidity_sol\": 0,\n            \"transaction_count\": 0,\n            \"price_1hr_change\": 0,\n            \"price_24hr_change\": -0.00017852592783909832,\n            \"protocol\": \"Jupiter\",\n            \"last_updated\": \"2025-06-23T05:06:44.519Z\",\n            \"source\": \"jupiter\"\n        },\n        {\n            \"token_address\": \"So11111111111111111111111111111111111111112\",\n            \"token_name\": \"SOL\",\n            \"token_ticker\": \"SOL\",\n            \"price_sol\": 133.339094,\n            \"market_cap_sol\": 0,\n            \"volume_sol\": 0,\n            \"liquidity_sol\": 0,\n            \"transaction_count\": 0,\n            \"price_1hr_change\": 0,\n            \"price_24hr_change\": -0.052813410699691477,\n            \"protocol\": \"Jupiter\",\n            \"last_updated\": \"2025-06-23T05:06:44.519Z\",\n            \"source\": \"jupiter\"\n        },\n        {\n            \"token_address\": \"JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN\",\n            \"token_name\": \"JUP\",\n            \"token_ticker\": \"JUP\",\n            \"price_sol\": 0.348794,\n            \"market_cap_sol\": 0,\n            \"volume_sol\": 0,\n            \"liquidity_sol\": 0,\n            \"transaction_count\": 0,\n            \"price_1hr_change\": 0,\n            \"price_24hr_change\": -0.012123097174145576,\n            \"protocol\": \"Jupiter\",\n            \"last_updated\": \"2025-06-23T05:06:44.519Z\",\n            \"source\": \"jupiter\"\n        },\n        {\n            \"token_address\": \"J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn\",\n            \"token_name\": \"JitoSOL\",\n            \"token_ticker\": \"JitoSOL\",\n            \"price_sol\": 161.445385976,\n            \"market_cap_sol\": 0,\n            \"volume_sol\": 0,\n            \"liquidity_sol\": 0,\n            \"transaction_count\": 0,\n            \"price_1hr_change\": 0,\n            \"price_24hr_change\": -0.0073507636902724865,\n            \"protocol\": \"Jupiter\",\n            \"last_updated\": \"2025-06-23T05:06:44.519Z\",\n            \"source\": \"jupiter\"\n        },\n        {\n            \"token_address\": \"Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB\",\n            \"token_name\": \"USDT\",\n            \"token_ticker\": \"USDT\",\n            \"price_sol\": 1.000224,\n            \"market_cap_sol\": 0,\n            \"volume_sol\": 0,\n            \"liquidity_sol\": 0,\n            \"transaction_count\": 0,\n            \"price_1hr_change\": 0,\n            \"price_24hr_change\": -0.047498229760657255,\n            \"protocol\": \"Jupiter\",\n            \"last_updated\": \"2025-06-23T05:06:44.519Z\",\n            \"source\": \"jupiter\"\n        },\n        {\n            \"token_address\": \"bSo13r4TkiE4KumL71LsHTPpL2euBYLFx6h9HP3piy1\",\n            \"token_name\": \"bSOL\",\n            \"token_ticker\": \"bSOL\",\n            \"price_sol\": 163.485211407,\n            \"market_cap_sol\": 0,\n            \"volume_sol\": 0,\n            \"liquidity_sol\": 0,\n            \"transaction_count\": 0,\n            \"price_1hr_change\": 0,\n            \"price_24hr_change\": 0.2590631111114372,\n            \"protocol\": \"Jupiter\",\n            \"last_updated\": \"2025-06-23T05:06:44.519Z\",\n            \"source\": \"jupiter\"\n        },\n        {\n            \"token_address\": \"mSoLzYCxHdYgdzU16g5QSh3i5K3z3KZK7ytfqcJm7So\",\n            \"token_name\": \"mSOL\",\n            \"token_ticker\": \"mSOL\",\n            \"price_sol\": 173.561219405,\n            \"market_cap_sol\": 0,\n            \"volume_sol\": 0,\n            \"liquidity_sol\": 0,\n            \"transaction_count\": 0,\n            \"price_1hr_change\": 0,\n            \"price_24hr_change\": -0.18948776611693002,\n            \"protocol\": \"Jupiter\",\n            \"last_updated\": \"2025-06-23T05:06:44.519Z\",\n            \"source\": \"jupiter\"\n        },\n        {\n            \"token_address\": \"DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263\",\n            \"token_name\": \"BONK\",\n            \"token_ticker\": \"BONK\",\n            \"price_sol\": 0.0000122773,\n            \"market_cap_sol\": 0,\n            \"volume_sol\": 0,\n            \"liquidity_sol\": 0,\n            \"transaction_count\": 0,\n            \"price_1hr_change\": 0,\n            \"price_24hr_change\": 0.19712842542826864,\n            \"protocol\": \"Jupiter\",\n            \"last_updated\": \"2025-06-23T05:06:44.519Z\",\n            \"source\": \"jupiter\"\n        }\n    ],\n    \"count\": 10\n}"
+				}
+			]
+		},
+		{
+			"name": "Filter Tokens",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/tokens/filter",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"tokens",
+								"filter"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "RateLimit-Policy",
+							"value": "100;w=60"
+						},
+						{
+							"key": "RateLimit-Limit",
+							"value": "100"
+						},
+						{
+							"key": "RateLimit-Remaining",
+							"value": "99"
+						},
+						{
+							"key": "RateLimit-Reset",
+							"value": "60"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "3617"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"e21-bwtoMAj2ovPNXfRmLdmQ0mtmR4k\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Jun 2025 05:12:17 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"token_address\": \"719cLKqG9nhJCAYCjrBUGxsUSwJwPCcQjNkkq1Gypump\",\n            \"token_name\": \"Solana\",\n            \"token_ticker\": \"SOL\",\n            \"price_sol\": 1.138e-7,\n            \"market_cap_sol\": 132926186291.7399,\n            \"volume_sol\": 288815641476.2742,\n            \"liquidity_sol\": 499714091,\n            \"transaction_count\": 597,\n            \"price_1hr_change\": 7.57,\n            \"price_24hr_change\": -48.45,\n            \"protocol\": \"pumpswap\",\n            \"last_updated\": \"2025-06-23T05:12:10.488Z\",\n            \"source\": \"dexscreener\"\n        },\n        {\n            \"token_address\": \"fESbUKjuMY6jzDH9VP8cy4p3pu2q5W2rK2XghVfNseP\",\n            \"token_name\": \"CatFrogDogShark\",\n            \"token_ticker\": \"SOLANA\",\n            \"price_sol\": 4.889e-7,\n            \"market_cap_sol\": 127952546533.03334,\n            \"volume_sol\": 7118142769.4825115,\n            \"liquidity_sol\": 455576841,\n            \"transaction_count\": 47,\n            \"price_1hr_change\": 0,\n            \"price_24hr_change\": -12.3,\n            \"protocol\": \"raydium\",\n            \"last_updated\": \"2025-06-23T05:12:10.488Z\",\n            \"source\": \"dexscreener\"\n        },\n        {\n            \"token_address\": \"So11111111111111111111111111111111111111112\",\n            \"token_name\": \"SOL\",\n            \"token_ticker\": \"SOL\",\n            \"price_sol\": 133.7192365,\n            \"market_cap_sol\": 0,\n            \"volume_sol\": 0,\n            \"liquidity_sol\": 0,\n            \"transaction_count\": 0,\n            \"price_1hr_change\": 0,\n            \"price_24hr_change\": 0.019380250441712692,\n            \"protocol\": \"Jupiter\",\n            \"last_updated\": \"2025-06-23T05:12:11.522Z\",\n            \"source\": \"jupiter\"\n        },\n        {\n            \"token_address\": \"mSoLzYCxHdYgdzU16g5QSh3i5K3z3KZK7ytfqcJm7So\",\n            \"token_name\": \"mSOL\",\n            \"token_ticker\": \"mSOL\",\n            \"price_sol\": 174.045028609,\n            \"market_cap_sol\": 0,\n            \"volume_sol\": 0,\n            \"liquidity_sol\": 0,\n            \"transaction_count\": 0,\n            \"price_1hr_change\": 0,\n            \"price_24hr_change\": 0.2467832527016726,\n            \"protocol\": \"Jupiter\",\n            \"last_updated\": \"2025-06-23T05:12:11.522Z\",\n            \"source\": \"jupiter\"\n        },\n        {\n            \"token_address\": \"EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v\",\n            \"token_name\": \"USDC\",\n            \"token_ticker\": \"USDC\",\n            \"price_sol\": 0.999994,\n            \"market_cap_sol\": 0,\n            \"volume_sol\": 0,\n            \"liquidity_sol\": 0,\n            \"transaction_count\": 0,\n            \"price_1hr_change\": 0,\n            \"price_24hr_change\": 0.0036020700340362454,\n            \"protocol\": \"Jupiter\",\n            \"last_updated\": \"2025-06-23T05:12:11.522Z\",\n            \"source\": \"jupiter\"\n        },\n        {\n            \"token_address\": \"Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB\",\n            \"token_name\": \"USDT\",\n            \"token_ticker\": \"USDT\",\n            \"price_sol\": 1.000278,\n            \"market_cap_sol\": 0,\n            \"volume_sol\": 0,\n            \"liquidity_sol\": 0,\n            \"transaction_count\": 0,\n            \"price_1hr_change\": 0,\n            \"price_24hr_change\": -0.07016606248422255,\n            \"protocol\": \"Jupiter\",\n            \"last_updated\": \"2025-06-23T05:12:11.522Z\",\n            \"source\": \"jupiter\"\n        },\n        {\n            \"token_address\": \"DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263\",\n            \"token_name\": \"BONK\",\n            \"token_ticker\": \"BONK\",\n            \"price_sol\": 0.000012307,\n            \"market_cap_sol\": 0,\n            \"volume_sol\": 0,\n            \"liquidity_sol\": 0,\n            \"transaction_count\": 0,\n            \"price_1hr_change\": 0,\n            \"price_24hr_change\": 0.41815390163778243,\n            \"protocol\": \"Jupiter\",\n            \"last_updated\": \"2025-06-23T05:12:11.522Z\",\n            \"source\": \"jupiter\"\n        },\n        {\n            \"token_address\": \"JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN\",\n            \"token_name\": \"JUP\",\n            \"token_ticker\": \"JUP\",\n            \"price_sol\": 0.349377,\n            \"market_cap_sol\": 0,\n            \"volume_sol\": 0,\n            \"liquidity_sol\": 0,\n            \"transaction_count\": 0,\n            \"price_1hr_change\": 0,\n            \"price_24hr_change\": 0.07530411040235682,\n            \"protocol\": \"Jupiter\",\n            \"last_updated\": \"2025-06-23T05:12:11.522Z\",\n            \"source\": \"jupiter\"\n        },\n        {\n            \"token_address\": \"J1toso1uCk3RLmjorhTtrVwY9HJ7X8V9yYac6Y7kGCPn\",\n            \"token_name\": \"JitoSOL\",\n            \"token_ticker\": \"JitoSOL\",\n            \"price_sol\": 161.896155952,\n            \"market_cap_sol\": 0,\n            \"volume_sol\": 0,\n            \"liquidity_sol\": 0,\n            \"transaction_count\": 0,\n            \"price_1hr_change\": 0,\n            \"price_24hr_change\": -0.01300330315293768,\n            \"protocol\": \"Jupiter\",\n            \"last_updated\": \"2025-06-23T05:12:11.522Z\",\n            \"source\": \"jupiter\"\n        },\n        {\n            \"token_address\": \"bSo13r4TkiE4KumL71LsHTPpL2euBYLFx6h9HP3piy1\",\n            \"token_name\": \"bSOL\",\n            \"token_ticker\": \"bSOL\",\n            \"price_sol\": 163.950908596,\n            \"market_cap_sol\": 0,\n            \"volume_sol\": 0,\n            \"liquidity_sol\": 0,\n            \"transaction_count\": 0,\n            \"price_1hr_change\": 0,\n            \"price_24hr_change\": 0.5444219529901204,\n            \"protocol\": \"Jupiter\",\n            \"last_updated\": \"2025-06-23T05:12:11.522Z\",\n            \"source\": \"jupiter\"\n        }\n    ],\n    \"pagination\": {\n        \"limit\": 20,\n        \"total\": 10\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Search Tokens",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/tokens/search?q=bonk",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"tokens",
+								"search"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "bonk"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "30"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "29"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Jun 2025 05:13:07 GMT"
+						},
+						{
+							"key": "X-RateLimit-Reset",
+							"value": "1750655648"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "755"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2f3-9xTvu4N8NgBaWlAtC7Rklxdku+Y\""
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"token_address\": \"DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263\",\n            \"token_name\": \"Bonk\",\n            \"token_ticker\": \"Bonk\",\n            \"price_sol\": 9.223e-8,\n            \"market_cap_sol\": 10345752220171534,\n            \"volume_sol\": 6814697318423.624,\n            \"liquidity_sol\": 70695392244,\n            \"transaction_count\": 11346,\n            \"price_1hr_change\": -0.29,\n            \"price_24hr_change\": -2.4,\n            \"protocol\": \"meteora\",\n            \"last_updated\": \"2025-06-23T05:13:07.924Z\",\n            \"source\": \"dexscreener,dexscreener,dexscreener,dexscreener,dexscreener,dexscreener,dexscreener,dexscreener,dexscreener,dexscreener,dexscreener,dexscreener,dexscreener,dexscreener,dexscreener,dexscreener,dexscreener,dexscreener,dexscreener,dexscreener,dexscreener,dexscreener,dexscreener,dexscreener,dexscreener,dexscreener,dexscreener,dexscreener,dexscreener\"\n        }\n    ],\n    \"count\": 1\n}"
+				}
+			]
+		},
+		{
+			"name": "Health Check",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/health",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"health"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "82"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"52-6DUMCikkReIwUDMr4alaawn2T+c\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Jun 2025 05:15:43 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"healthy\",\n    \"timestamp\": \"2025-06-23T05:15:43.106Z\",\n    \"uptime\": 574.365053917\n}"
+				}
+			]
+		},
+		{
+			"name": "Invalidate Cache",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/tokens/cache/invalidate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"tokens",
+								"cache",
+								"invalidate"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "59"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3b-f4uNqvCR5fD1zmDyzStSWbe03Pg\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Jun 2025 05:33:38 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Cache invalidated successfully\"\n}"
+				},
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/tokens/cache/invalidate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"tokens",
+								"cache",
+								"invalidate"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Security-Policy",
+							"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Resource-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Origin-Agent-Cluster",
+							"value": "?1"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=15552000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-DNS-Prefetch-Control",
+							"value": "off"
+						},
+						{
+							"key": "X-Download-Options",
+							"value": "noopen"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "59"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3b-f4uNqvCR5fD1zmDyzStSWbe03Pg\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 23 Jun 2025 06:14:47 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"Cache invalidated successfully\"\n}"
+				}
+			]
+		}
+	]
+}
